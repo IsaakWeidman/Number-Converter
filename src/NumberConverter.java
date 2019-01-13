@@ -6,18 +6,28 @@ public class NumberConverter {
 
 	 	Scanner reader = new Scanner(System.in);
 	 	String input;
-	 	List<String> numbers;
+	 	String[] numbers;
 
 	 	System.out.print("Please enter the number and base formatted as \'number, base\'\n>");
 	 	input = reader.nextLine();
 
-		numbers = new ArrayList<>(input.split(","));
+		numbers = input.split(", ");
+		
+		toDecimal(numbers);
 	}
 
 
 
-	public static List<Integer> splitNumbers(String in) {
-
-		List<Integer> number;
+	public static int toDecimal(String[] nums) {
+		String number = nums[0];
+		int base = Integer.parseInt(nums[1]);
+		
+		int decVal = 0;
+		
+		for(int i = number.length() - 1; i >= 0; i--) {
+			decVal = 
+		}
+		
+		return 1;
 	}
 }
